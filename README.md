@@ -196,7 +196,6 @@ The architecture allows:
 
 <p align="center">
   <img src="screenshots/orders.png" width="48%" />
-  <img src="screenshots/settings.png" width="48%" />
 </p>
 
 ---
