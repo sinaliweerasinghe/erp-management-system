@@ -180,19 +180,24 @@ The architecture allows:
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/login.png)
 
-### Multi-Tenant Organization Management
+## 📸 System Preview
 
-![Organization Management](screenshots/organizations.png)
+<p align="center">
+  <img src="screenshots/dashboard.png" width="48%" />
+  <img src="screenshots/demo_dashboard.png" width="48%" />
+</p>
 
-### Employee Management
+<p align="center">
+  <img src="screenshots/employees.png" width="48%" />
+  <img src="screenshots/inventory.png" width="48%" />
+</p>
 
-![Employee Management](screenshots/employees.png)
-
-### Reports
-
-![Reports](screenshots/reports.png)
+<p align="center">
+  <img src="screenshots/orders.png" width="48%" />
+  <img src="screenshots/settings.png" width="48%" />
+</p>
 
 ---
 
