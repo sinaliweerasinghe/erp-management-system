@@ -1,0 +1,25 @@
+.features-section {
+  padding: 100px 60px;
+  background: #0f172a;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  margin-top: -50px;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  max-width: 600px;
+  margin: 0 auto 60px;
+  opacity: 0.85;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}

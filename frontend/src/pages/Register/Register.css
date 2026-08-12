@@ -1,0 +1,287 @@
+.register-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 20px;
+}
+
+.register-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 10;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(-3px);
+}
+
+.back-arrow svg {
+  font-size: 16px;
+}
+
+.register-box {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 32px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  box-shadow: 
+    0 15px 40px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #4fd1c5, #4299e1, #9f7aea);
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.register-header h2 {
+  color: #1a202c;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  color: #2d3748;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  letter-spacing: 0.2px;
+}
+
+.register-box input {
+  width: 100%;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  color: #1a202c;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.register-box input:focus {
+  outline: none;
+  border-color: #4fd1c5;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.1);
+}
+
+.register-box input::placeholder {
+  color: #a0aec0;
+  font-size: 13px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #4fd1c5 0%, #38b2ac 100%);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #38b2ac 0%, #319795 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(56, 178, 172, 0.25);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 24px;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-text span {
+  color: #4fd1c5;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.footer-text span:hover {
+  color: #38b2ac;
+  text-decoration: underline;
+}
+
+.privacy-notice {
+  text-align: center;
+  margin-top: 20px;
+  color: #a0aec0;
+  font-size: 12px;
+  line-height: 1.5;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.privacy-notice span {
+  color: #4299e1;
+  cursor: pointer;
+  margin: 0 3px;
+}
+
+.privacy-notice span:hover {
+  text-decoration: underline;
+}
+
+/* Add these to your existing Login.css */
+
+/* Password input container */
+.password-input-container {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.password-toggle:hover {
+  color: #4fd1c5;
+}
+
+/* Add password requirements section for better UX */
+.password-requirements {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 8px;
+  border-left: 4px solid #4fd1c5;
+}
+
+.password-requirements h4 {
+  color: #2d3748;
+  font-size: 13px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.password-requirements ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #718096;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.password-requirements li {
+  margin-bottom: 4px;
+}
+
+/* Responsive adjustments - EXACT SAME */
+@media (max-width: 480px) {
+  .register-box {
+    padding: 24px;
+    max-width: 320px;
+    margin: 0 15px;
+  }
+  
+  .register-header h2 {
+    font-size: 22px;
+  }
+  
+  .subtitle {
+    font-size: 13px;
+  }
+  
+  .back-arrow {
+    top: 15px;
+    left: 15px;
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  .password-requirements {
+    padding: 12px;
+  }
+}
